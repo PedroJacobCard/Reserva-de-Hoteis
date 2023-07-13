@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="./assets/imagens/favicon.ico" type="image/x-icon">
+    <title>Chama Hotéis</title>
+</head>
+<body>
+    
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container py-1">
+            <a class="navbar-brand fw-bold" href="./index.html"><i class="bi bi-megaphone-fill text-info mx-2"></i> Chama Hotéis</a>
+            <button class="navbar-toggler" type="button" 
+            data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+        
+            <div class="container navabar-collapse d-lg-flex justify-content-lg-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="navbar-item me-5">
+                        <a href="./index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item d-block d-md-none d-lg-none">
+                        <a href="./login.html" type="button" class="btn-orange">Faça Login</a>
+                    </li>
+                    <li class="nav-item d-none d-md-block d-lg-block">
+                        <a href="./login.html" type="button" class="btn btn-orange w-100">Faça Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--End Navbar-->
+
+    <main class="w-100 pb-5 pt-lg-2 pb-lg-5 min-vh-100">
+        <div class="container pt-5 pb-2 pt-lg-5 pb-lg-0">
+            <div class="w-100 title mb-5 mb-md-5 mb-lg-5 pt-lg-4">
+                <h1 class="fs-4 text-center text-lg-center mb-2 fw-bold">Pré-reserva</h1>
+                <div class="line-orange m-auto"></div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-3 col-lg-3 mb-3">
+                    <div class="card border-0 pt-lg-4">
+                        <img src="./assets/imagens/hoteis/hotel-2.jpeg" alt="hotel-2" class="card-img-top rounded-0">
+                        <div class="card-body pe-0 ps-0">
+                            <h5 class="card-title mb-1">Hotel Paris Germany</h5>
+                            <p class="card-text text-muted mb-1">Ilhéus - BA</p>
+                            <div class="stars mb-3">
+                                <span class="star"><i class="bi bi-star-fill" aria-hidden="true"></i></span>
+                                <span class="star"><i class="bi bi-star-fill" aria-hidden="true"></i></span>
+                                <span class="star"><i class="bi bi-star-fill" aria-hidden="true"></i></span>
+                                <span class="star"><i class="bi bi-star-fill" aria-hidden="true"></i></span>
+                                <span class="star"><i class="bi bi-star-fill" aria-hidden="true"></i></span>
+                            </div>
+                            <div class="alert alert-success rounded-0 border-0 text-center" role="alert">
+                                Disponível
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md col-lg-9">
+                    <div class="card border-0">
+                        <div class="card-body">
+                            <form action="" class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label">Nome Completo</label>
+                                    <input type="text" class="form-contr rounded-0" id="name">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">E-Mail</label>
+                                    <input type="email" class="form-contr rounded-0" id="email">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="document" class="form-label">CPF/ Passaporte</label>
+                                    <input type="text" class="form-contr rounded-0" id="document">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="birthday" class="form-label">Data de nascimento</label>
+                                    <input type="date" class="form-contr rounded-0" id="birthday">
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="phone" class="form-label">Telefone</label>
+                                    <input type="tel" class="form-contr rounded-0" id="phone">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="country" class="form-label">País</label>
+                                    <input type="text" class="form-contr rounded-0" id="country">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="state" class="form-label">Estado</label>
+                                    <input type="text" class="form-contr rounded-0" id="state">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="city" class="form-label">Cidade</label>
+                                    <input type="text" class="form-contr rounded-0" id="city">
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="street" class="form-label">Rua</label>
+                                    <input type="text" class="form-contr rounded-0" id="street">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="sector" class="form-label">Bairro</label>
+                                    <input type="text" class="form-contr rounded-0" id="sector">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="ZIP" class="form-label">CEP</label>
+                                    <input type="text" class="form-contr rounded-0" id="ZIP">
+                                </div>
+                                <div class="w-100 d-flex justify-content-end d-lg-flex justify-content-lg-end pt-3">
+                                    <button type="button" class="btn btn-orange pe-4 ps-4 rounded-0">Próximo</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--Footer-->
+    <footer class="w-100 bg-light py-0">
+            <div class="container pt-5 pt-lg-5 pb-lg-3">
+                <div class="row">
+                    <div class="col-12 col-md-3 col-lg-4 mb-5 mb-md-0 mb-lg-0">
+                        <h4 class="fs-4 fw-bold text-uppercase mb-2 mb-md-4 mb-lg-4"><i class="bi bi-megaphone-fill text-info mx-2"></i> Chama Hotéis</h4>
+                        <p class="text-muted">
+                            Somos uma empresa que nasceu em 1998, cuja missão 
+                            é entregar aos nossos clientes e parceiros 
+                            os melhores lugares para ter um lazer e um descanso excelente e merecido.
+                        </p>
+                        <a href="#" title="Twitter" class="text-decoration-none fs-5 text-muted me-1 me-md-1 me-lg-2"><i class="bi bi-twitter"></i></a>
+                        <a href="#" title="Facebook" class="text-decoration-none fs-5 text-muted me-1 me-md-1 me-lg-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" title="Instagram" class="text-decoration-none fs-5 text-muted me-1 me-md-1 me-lg-2"><i class="bi bi-instagram"></i></a>
+                        <a href="#" title="Youtube" class="text-decoration-none fs-5 text-muted me-1 me-md-1 me-lg-2"><i class="bi bi-youtube"></i></a>
+                    </div>
+    
+                    <div class="col-12 col-md-3 col-lg-4 pe-lg-0 ps-lg-5 mb-5 mb-md-0 mb-lg-0">
+                        <h4 class="fs-4 fw-bold mb-2 mb-md-4 mb-lg-4">Minha conta</h4>
+                        <p class="mb-0">
+                            <a href="#" class="text-decoration-none text-muted">Minhas viagens</a>
+                        </p>
+    
+                        <p class="mb-0">
+                            <a href="#" class="text-decoration-none text-muted">Meu perfil</a>
+                        </p>
+                    </div>
+    
+                    <div class="col-12 col-md-3 col-lg-4 mb-5 mb-md-0 mb-lg-0">
+                        <h4 class="fs-4 fw-bold mb-2 mb-md-4 mb-lg-4">Informações adicionais</h4>
+                        <p class="mb-0">
+                            <a href="#" class="text-decoration-none text-muted">Termos e condições</a>
+                        </p>
+    
+                        <p class="mb-0">
+                            <a href="#" class="text-decoration-none text-muted">Política de privacidade</a>
+                        </p>
+    
+                        <p class="mb-0">
+                            <a href="#" class="text-decoration-none text-muted">Central de ajuda</a>
+                        </p>
+    
+                        <p class="mb-0">
+                            <a href="#" class="text-decoration-none text-muted">Condições de uso</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-100 d-flex align-items-center justify-content-center flex-column bg-color-orange">
+                <h5 class="pt-4">&copy; Chama Hotéis - by Pedro Jacob | 2023</h5>
+                <p>Todos os direiteos reservados</p>
+            </div>
+    </footer>
+    <!--End Footer-->
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</html>

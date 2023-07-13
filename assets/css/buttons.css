@@ -1,0 +1,49 @@
+.btn-orange{
+    color: var(--bg-white);
+    background-color: var(--bg-orange);
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+    font-size: 1rem;
+    font-family: 'Ruda', sans-serif;
+    font-weight: 400;
+    border-radius: 2px;
+    padding: .2rem;
+}
+
+.btn-orange:hover {
+    color: var(--bg-white);
+    background-color: var(--bg-orange-hover);
+}
+
+.btn-orange-outline{
+    color: var(--bg-orange);
+    background-color: transparent;
+    outline: 2px solid var(--bg-orange);
+    box-shadow: none;
+    font-size: 1rem;
+    font-family: 'Ruda', sans-serif;
+    font-weight: 400;
+    transition: all .5s ease-in-out;
+}
+
+.btn-orange-outline:hover{
+    color: var(--bg-white);
+    background-color: var(--bg-orange);
+    outline: none;
+}
+
+.btn-tooltip-default{
+    width: auto;
+    height: auto;
+    color: var(--bg-orange);
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+    outline: none;
+    font-size: 1.2rem;
+}
+
+.btn-tooltip-default:hover{
+    color: var(--bg-orange-hover);
+}
